@@ -1,0 +1,14 @@
+
+
+{% extends "arduino/base.html" %}
+    {% block title %}
+        Command Line
+    {% endblock %}
+{% block content %}
+
+<!--==============================-->
+    <form action="." method="get">
+        <p>{{ form.text }}<input type="submit" value="Send command" class="button" /></p>
+    </form>
+{% endblock %}
+
