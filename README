@@ -1,0 +1,32 @@
+To use this:
+
+Upload Standard Firmata program to your Arduino.
+Connect your Arduino to your computer.
+Connect led to your pin9 and Ground in Arduino
+Change the apriopriate line in arduino/arduinoControl.py to your usb port.
+
+
+Install django.
+(optionally install pip if you haven't)
+    apt-get pip
+    pip install django
+
+you can also
+    easy_install django
+
+Get this code
+    git clone git@github.com:83tb/ADLD.git
+
+Run test server
+    python manage.py runserver
+
+Open 127.0.0.1:8000 in your browser.
+
+Now you can enter commands in the form to steer the led.
+    led 9 0.1
+    led 9 0.3
+
+Where the first digit is number of the pin on Arduino on which the led is
+connected to, and the float number is brightness of the led you want to
+achieve.
+
