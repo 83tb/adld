@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 #
+import os
+
+PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
 
 # Django settings for arduinoWEB project.
 
@@ -87,7 +90,7 @@ TEMPLATE_DIRS = (
 )
 TEMPLATE_DIRS = (
     #Replaced with the path of your project
-"/Users/kuba/Code/ADLD/template"    
+PROJECT_PATH + "/template"
 )
 
 INSTALLED_APPS = (
