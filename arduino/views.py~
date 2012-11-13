@@ -16,7 +16,7 @@ def commandline(request):
         if form.is_valid():
             text = form.cleaned_data['text']
             arduino=ArduinoControl(text)
-            arduino.run()
+            arduino.start()
         else:
             queryset = []
     form = CommandForm() 

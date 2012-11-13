@@ -47,7 +47,7 @@ digital_1 = board.get_pin('d:10:p')
 def set_dim_level(led_pin, dim_level):
     board.digital[led_pin].write(dim_level) # Set the LED pin to 1 (HIGH) 
 
-#set_dim_level(9, 0.1)    
+set_dim_level(9, 0.1)    
 
 class ArduinoControl (Thread):
     def __init__(self, text):
