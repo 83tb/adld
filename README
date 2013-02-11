@@ -17,7 +17,7 @@ To use this:
 Upload Standard Firmata program to your Arduino. For more info go to
     http://firmata.org/wiki/Main_Page
 
-Python package: https://github.com/lupeke/python-firmata/
+   
 
 Connect your Arduino to your computer.
 Connect led to your pin9 and Ground in Arduino
@@ -27,6 +27,7 @@ Change the apriopriate line in arduino/arduinoControl.py to your usb port.
 Install django.
 (optionally install pip if you haven't)
     apt-get install pip
+    pip install pyfirmata
     pip install django
 
 you can also
