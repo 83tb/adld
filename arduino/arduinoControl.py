@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from threading import Thread
-from firmata import * 
+#from firmata import * 
 
 PIN = 9 # Pin 12 is used
 DELAY = 2 # A 2 seconds delay
